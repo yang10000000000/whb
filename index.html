@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quote Machine</title>
+    <!-- 这里是 Tailwind 、字体等相关的 script 和 link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#165DFF',
+                        secondary: '#36BFFA',
+                        accent: '#7B61FF',
+                        dark: '#1D2939',
+                        light: '#F9FAFB'
+                    },
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        /* 这里是 Tailwind 的自定义样式 */
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            .quote-shadow {
+                box-shadow: 0 10px 25px -5px rgba(22, 93, 255, 0.1), 0 8px 10px -6px rgba(22, 93, 255, 0.1);
+            }
+            .bg-gradient-primary {
+                background: linear-gradient(135deg, #165DFF 0%, #7B61FF 100%);
+            }
+            .transition-all-300 {
+                transition: all 0.3s ease;
+            }
+        }
+    </style>
+</head>
+<body class="bg-light min-h-screen font-inter text-dark flex flex-col items-center justify-center p-4 md:p-8">
+    <div id="root" class="w-full max-w-3xl mx-auto"></div>
+    
+    <!-- FreeCodeCamp 测试脚本 -->
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <!-- React 相关依赖 -->
+    <script src="https://cdn.jsdelivr.net/npm/react@17.0.2/umd/react.production.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/babel-standalone@6.26.0/babel.min.js"></script>
+    
+    <!-- React 组件代码 -->
+    <script type="text/babel">
+        class QuoteBox extends React.Component {
+            // ... 这里是组件的 constructor 、生命周期函数、方法等代码 ...
+            render() {
+                // ... 这里是组件的 JSX 渲染代码 ...
+            }
+        }
+        
+        ReactDOM.render(<QuoteBox />, document.getElementById('root'));
+    </script>
+</body>
+</html>
